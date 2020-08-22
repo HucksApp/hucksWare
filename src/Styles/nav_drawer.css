@@ -1,0 +1,10 @@
+
+.MuiDrawer-paperAnchorLeft{
+    width: 15%;
+    border:solid 10px #EEEEEE;
+    padding: 3%; 
+    margin-top:15vh;
+}
+
+.MuiDrawer-root{
+}
