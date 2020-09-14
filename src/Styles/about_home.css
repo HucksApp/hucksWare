@@ -1,0 +1,68 @@
+.aboutHome{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 100px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    color: #616161;
+
+}
+.aboutHome> *{
+    min-width: auto;
+}
+
+
+
+.about_home{
+    
+    width: 580px; 
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+
+
+.profile_message{
+    width: 40%;
+}
+
+#bio_div{
+
+width: 275px;
+overflow: hidden;
+transition: all 0.6s;
+
+
+}
+
+#hack_div{
+    width: 275px;
+    overflow: hidden; 
+    text-indent: -100%; 
+    transition: all 0.6s;
+    
+
+}
+
+
+
+
+.profile_message{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.MuiPaper-root{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 60px;
+}

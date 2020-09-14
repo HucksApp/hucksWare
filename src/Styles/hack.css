@@ -1,0 +1,14 @@
+.hack{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+
+    
+    
+}
+
+.hack_hucks{
+    height: 90vh;
+    width: 400px;  
+    filter: brightness(0); 
+}

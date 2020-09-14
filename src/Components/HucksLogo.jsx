@@ -3,7 +3,7 @@ import React from 'react'
 export default function HucksLogo() {
   return (
     <div>
-      <h3 style={{color:"#fff", fontSize: '40px'}}>HucksLogo</h3>
+      <h3 style={{color:"#616161", fontSize: '40px',justifySelf:'flexEnd'}}>HucksLogo</h3>
     </div>
   )
 }

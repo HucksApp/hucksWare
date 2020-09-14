@@ -1,8 +1,17 @@
 .top_nav {
-    display: flex;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     width:100%;
-    padding: 0px 5%;
+    padding: 0px 10px;
 }
+
+
+.MuiToolbar-root{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    height: 7vh;
+}
+
+

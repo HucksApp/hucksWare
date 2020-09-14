@@ -1,0 +1,11 @@
+.biography{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.hucks{
+    height: 90vh;
+    width: 400px; 
+    filter: grayscale(100%); 
+}

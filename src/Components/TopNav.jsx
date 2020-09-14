@@ -3,6 +3,11 @@ import React, { useState } from 'react';
 import { useSpring, animated } from 'react-spring'
 
 
+import AppBar from '@material-ui/core/AppBar'
+
+import IconButton from '@material-ui/core/IconButton'
+
+import Toolbar from '@material-ui/core/Toolbar'
 import MenuTwoToneIcon from '@material-ui/icons/MenuTwoTone';
 import CloseIcon from '@material-ui/icons/Close';
 
@@ -18,18 +23,6 @@ import '../Styles/top_nav.css'
 export default function TopNav(props) {
 
     const [toggle, set] = useState(false)
-    const prop = useSpring({
-        to: async (next, cancel) => {
-            await next({ opacity: 0.5 })
-            await next({ opacity: 0.1 })
-        },
-        from: { opacity: 0, color: "white" }
-    })
-
-
-
-
-
 
     const [state, setState] = useState(false);
 
@@ -41,29 +34,40 @@ export default function TopNav(props) {
     let btn;
 
     if (!state) {
-        btn = <animated.div style={prop}>
-                <MenuTwoToneIcon style={{ color: props.color_type, fontSize: "60px" }} onClick={() => toggleDrawer(true)} />
-            </animated.div>
+        btn = <MenuTwoToneIcon aria-label="menu" edge="start"  style={{ color: '#616161', fontSize: "60px" }} onClick={() => toggleDrawer(true)} />
+           
     } else if (state) {
 
-        btn = <animated.div style={prop}>
-                <CloseIcon style={{ color: props.color_type, fontSize: "60px" }} />
-            </animated.div>
+        btn = <CloseIcon edge="start"  style={{ color: '#616161', fontSize: "60px" }} />
+          
     }
+
 
 
 
     return (
 
+        
+        <AppBar color={'F5F5F5'} position="sticky">
+        
         <div className="top_nav">
-            <NavDrawer toggle={state} chaToggle={toggleDrawer} />
-            <div>
+        <Toolbar variant={'dense'} >
+           
+            <NavDrawer toggle={state} chaToggle={toggleDrawer}  update_home={props.update_home} />
+            
+            <IconButton>
                 {btn}
+            </IconButton>
+            <div className="logo_div">
+            <HucksLogo  />
             </div>
-
-            <HucksLogo />
-
+            </Toolbar>
         </div>
-
+        
+        </AppBar>
     )
 }
+
+//#616161 #949494 B5B5B5
+
+
