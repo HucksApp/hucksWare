@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{createRef,forwardRef} from 'react';
 
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
@@ -9,18 +9,21 @@ import DevicesIcon from '@material-ui/icons/Devices';
 import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 
 
+
+import Contact from './Contact'
+import Experience  from './Experience'
 import AboutHome from './AboutHome'
 import Skills from './Skills';
 
-import {  flipInY } from 'react-animations';
+import {  fadeInUp } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import TopNav from './TopNav'
 
 
 const styles = {
-    flipInY: {
+    fadeInUp: {
     animation: 'x 2s',
-    animationName: Radium.keyframes(flipInY, 'flipInY')
+    animationName: Radium.keyframes(fadeInUp, 'fadeInUp')
   }}
 
 
@@ -30,12 +33,43 @@ const styles = {
 
 const HomeMain = (props) => {
 
+   const aboutRef = createRef()
+   const skillsRef = createRef()
+   const experienceRef = createRef()
+   const contactRef = createRef()
+   const scrollTop = createRef()
+
+
+    const ForwardTopNav = forwardRef((props, ref)=>{
+        return(
+            <TopNav 
+            aboutRef={aboutRef}
+            skillsRef={skillsRef}
+            experienceRef={experienceRef}
+            contactRef={contactRef}
+                {...props}
+            
+            />
+        )
+    })
+
+
+    const ForwardedContact = forwardRef((props, ref)=>{
+                        return(
+
+                            <Contact  scrollTop={scrollTop} {...props}   />
+                        )
+    })
+
+
 
 
     return (
         <StyleRoot>
-        <div className="main_home" style={styles.flipInY}>
-            <TopNav update_home={props.update_home}/>
+        <div ref={scrollTop} className="main_home" style={styles.fadeInUp}>
+            <ForwardTopNav update_home={props.update_home}
+                           
+            />
             <div className='about_underline'> 
             <h1 >ABOUT</h1>
             <p ></p>
@@ -82,8 +116,18 @@ const HomeMain = (props) => {
         <p></p>
         </div>
         </div>
+        <div ref={aboutRef}>
         <AboutHome/>
+        </div>
+        <div ref={skillsRef}> 
         <Skills/>
+        </div>
+        <div ref={experienceRef}>
+        <Experience/>
+        </div>
+        <div ref={contactRef}>
+        <ForwardedContact/>
+        </div>
 
         </div>
         

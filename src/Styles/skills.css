@@ -17,8 +17,8 @@
 }
 
 .underline{
-    border-top: solid 4px  #616161;
-    width: 50px;
+    border-top: solid 4px #aa84e0;
+    width: 70px;
     transform: translateX(-900px);
     transition: all 2s;
 

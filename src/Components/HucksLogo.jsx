@@ -1,9 +1,11 @@
 import React from 'react'
 
+import Avatar from '@material-ui/core/Avatar';
+
 export default function HucksLogo() {
   return (
     <div>
-      <h3 style={{color:"#616161", fontSize: '40px',justifySelf:'flexEnd'}}>HucksLogo</h3>
+      <h2 style={{color:"#616161", fontSize: '40px'}}>Hucks</h2>
     </div>
   )
 }

@@ -1,0 +1,47 @@
+.footercont{
+    background-color: #585858;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 7%;
+}
+
+.socialCont{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socials{
+    padding: 5px;
+    margin: 5px;
+    background-color: #626262 ;
+    transition: all 1s;
+}
+
+
+.socials:hover{
+    background-color: #aa84e0;
+    cursor: pointer;
+}
+
+.socials:hover >*{
+    transform: scale(0.8,0.8);
+    transition: all 0.7s;
+
+}
+
+.copywright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    flex: 1;
+    padding-bottom: 30px;
+}
+
+.copywright>span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

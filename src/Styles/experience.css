@@ -1,0 +1,43 @@
+.experience{
+    background-color: #F5F5F5;
+    margin-top: 40px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #616161 ;
+}
+
+
+.ex_underline{
+    border-top: solid 4px#aa84e0;
+    width: 100px;
+    transform: translateX(-900px);
+    transition: all 2s;
+}
+.experienceHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+
+.experience:hover >.experienceHead>.ex_underline{
+    transform: translateX(0px);
+}
+
+.exp_work{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.exp_work >*{
+    margin: 20px;
+    min-width: auto;
+}

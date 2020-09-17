@@ -1,0 +1,61 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.textSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+
+.formHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.formHead > *{
+    padding: 5px;
+}
+
+.MuiTextField-root{
+    background-color:#b0b0b0 ;
+}
+
+.MuiInputLabel-root{
+    color: #fff;
+}
+
+
+.submit{
+    display: flex;
+    padding: 15px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.submit > button{
+    background-color: #626262 ;
+    color: #fff;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    border: solid #fff;
+    font-weight: bolder;
+    transition: all 1s;
+}
+
+
+.submit > button:hover{
+    background-color: #fff;
+    color:  #626262;
+    border: solid #fff ;
+}

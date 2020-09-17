@@ -55,9 +55,9 @@ const SliderComp = (props) => {
 
   return (
    
-    <div key={props.skill}  className='slider'>
+    <div  className='slider'>
       <p>{props.skill} </p>
-      <BorderLinearProgress variant='determinate' value={progress} />
+      <BorderLinearProgress  variant='determinate' value={progress} />
       <Typography style={{fontSize:"30px",color:'#616161'}} variant='h3' >{`${Math.round(progress,)}%`}</Typography>
     </div>
   );

@@ -1,0 +1,51 @@
+.contactHome{
+   background-color: #626262;
+}
+
+
+.underlineContain{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.underlinetag{
+    border-top: solid 4px #fff;
+    width: 70px;
+    transform: translateX(-900px);
+    transition: all 2s;
+}
+
+.contactHome:hover >.contactSubContain>.underlineContain>.underlinetag{
+    transform: translateX(0px);
+}
+
+.scroller{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroller>div{
+    background-color: #585858;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    transition: all 1.3s;
+}
+
+
+.scroller>div:hover{
+    background-color: #aa84e0;
+    cursor: pointer;
+}
+
+.scroller>div:hover>*{
+    transform: scale(0.8,0.8);
+    transition: all 0.7s;
+}
+

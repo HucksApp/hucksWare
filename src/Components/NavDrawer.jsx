@@ -36,22 +36,33 @@ const useStyles = makeStyles({
 export default function NavDrawer( props ) {
     const classes = useStyles();
 
-    const  handleChange = () => {
+    const  handleChangeDark = () => {
         props.update_home(true)
+    }
+
+    const  handleChange = (ref) => {
+        
+            ref.current.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            duration: "5000"
+          })
+
+          
     }
 
    
 
   return (
     
-      <Drawer variant='temporary' anchor={"left"} open={props.toggle}  onClose={()=> props.chaToggle(false) }>
+      <Drawer elevation={25} variant='temporary' anchor={"left"} open={props.toggle}  onClose={()=> props.chaToggle(false) }>
        <List style={{color:'#616161',fontFamily:'Raleway'}} divider>
-           <ListItem button  onClick={handleChange}>
+           <ListItem button  onClick={handleChangeDark}>
                <ListItemIcon> <HomeIcon/> </ListItemIcon>
                 <ListItemText primary={"HOME"}/>
            </ListItem>
            <Divider variant={'middle'}/>
-           <ListItem button  >
+           <ListItem button  onClick={ () => handleChange(props.aboutRef) }>
                <ListItemIcon> <PersonIcon/> </ListItemIcon>
                 <ListItemText primary={"ABOUT"}/>
            </ListItem>
