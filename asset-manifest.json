@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/hucksWare/static/css/main.f1cf9e42.chunk.css",
+    "main.js": "/hucksWare/static/js/main.e7bdac70.chunk.js",
+    "main.js.map": "/hucksWare/static/js/main.e7bdac70.chunk.js.map",
+    "runtime-main.js": "/hucksWare/static/js/runtime-main.bc28fcb7.js",
+    "runtime-main.js.map": "/hucksWare/static/js/runtime-main.bc28fcb7.js.map",
+    "static/css/2.00129a64.chunk.css": "/hucksWare/static/css/2.00129a64.chunk.css",
+    "static/js/2.4e8e257a.chunk.js": "/hucksWare/static/js/2.4e8e257a.chunk.js",
+    "static/js/2.4e8e257a.chunk.js.map": "/hucksWare/static/js/2.4e8e257a.chunk.js.map",
+    "index.html": "/hucksWare/index.html",
+    "precache-manifest.f6269ddea21fec65db1b660ec9c24c06.js": "/hucksWare/precache-manifest.f6269ddea21fec65db1b660ec9c24c06.js",
+    "service-worker.js": "/hucksWare/service-worker.js",
+    "static/css/2.00129a64.chunk.css.map": "/hucksWare/static/css/2.00129a64.chunk.css.map",
+    "static/css/main.f1cf9e42.chunk.css.map": "/hucksWare/static/css/main.f1cf9e42.chunk.css.map",
+    "static/js/2.4e8e257a.chunk.js.LICENSE.txt": "/hucksWare/static/js/2.4e8e257a.chunk.js.LICENSE.txt",
+    "static/media/home.css": "/hucksWare/static/media/code.ccd2926b.gif",
+    "static/media/feshcom.svg": "/hucksWare/static/media/feshcom.50a024cb.svg",
+    "static/media/hucks22.png": "/hucksWare/static/media/hucks22.18415052.png",
+    "static/media/kp.svg": "/hucksWare/static/media/kp.f0f19a98.svg",
+    "static/media/periscope.svg": "/hucksWare/static/media/periscope.e47dfcb0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc28fcb7.js",
+    "static/css/2.00129a64.chunk.css",
+    "static/js/2.4e8e257a.chunk.js",
+    "static/css/main.f1cf9e42.chunk.css",
+    "static/js/main.e7bdac70.chunk.js"
+  ]
+}
