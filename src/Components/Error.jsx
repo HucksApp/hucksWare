@@ -31,7 +31,7 @@ const Error = (props) => {
 
 
     const handleBack = () => {
-        props.history.push('/')
+        props.history.push('/hucksWare')
     }
 
 

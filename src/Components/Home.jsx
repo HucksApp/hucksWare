@@ -38,11 +38,11 @@ export default function Home() {
         <NavDrawer />
       </div>
       <Switch>
-        <Route exact path='/bio'>
+        <Route exact path='/hucksWare'>
           <div>{home}</div>
         </Route>
 
-        <Route exact path='/Projects'>
+        <Route exact path='hucksWare/Projects'>
           <ComingSoon />
         </Route>
         <Route >

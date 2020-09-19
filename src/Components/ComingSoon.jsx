@@ -31,7 +31,7 @@ const ComingSoon = (props) => {
 
     const handleBack = () => {
         console.log(props)
-        props.history.push('/')
+        props.history.push('/hucksWare')
     }
 
 
