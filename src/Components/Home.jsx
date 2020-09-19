@@ -45,7 +45,7 @@ export default function Home() {
         <Route exact path='/hucksWare/Projects'>
           <ComingSoon />
         </Route>
-        <Route >
+        <Route path='' >
           <Error />
         </Route>
       </Switch>
