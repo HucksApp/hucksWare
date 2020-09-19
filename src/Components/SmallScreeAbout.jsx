@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 
 
 import WhatshotIcon from '@material-ui/icons/Whatshot';
@@ -22,25 +22,25 @@ const SmallScreeAbout = () => {
 
     let currentScreen;
 
-    const [messageState, setMessage] =  useState('question')
+    const [messageState, setMessage] = useState('question')
 
-    const handlescreenCoder = ()=>{
-            setMessage("coder")
+    const handlescreenCoder = () => {
+        setMessage("coder")
     }
 
-    const handlescreenHacker = ()=>{
+    const handlescreenHacker = () => {
         setMessage("hacker")
-}
+    }
 
-    
+
 
     if (messageState === 'question') {
-        currentScreen= <Question/>
-     }else if (messageState === 'coder'){
-        currentScreen= <Coder/>
-     }else if (messageState === 'hacker'){
-        currentScreen= <Hacker/>
-     }
+        currentScreen = <Question />
+    } else if (messageState === 'coder') {
+        currentScreen = <Coder />
+    } else if (messageState === 'hacker') {
+        currentScreen = <Hacker />
+    }
 
 
 
@@ -49,31 +49,31 @@ const SmallScreeAbout = () => {
             <div>
                 <img className='hackSmallscreen' alt='Hucks' src={hackHucks} />
             </div>
-             <div className='ssIconCover'>
-             <div className='profile_message'>
-                <h3>
-            Who's this guy?
+            <div className='ssIconCover'>
+                <div className='profile_message'>
+                    <h3>
+                        Who's this guy?
             `</h3>
-                {currentScreen}
+                   <div className="currentSmallScreen"> {currentScreen}</div>
+
+                </div>
+                <div className="buttonContSmallscreen">
+                    <div className='iconDiv' >
+                        <IconButton onClick={handlescreenCoder}>
+                            <CodeIcon style={{ fontSize: 30, color: '#616161' }} />
+                        </IconButton>
+                        <h3>Coder</h3>
+                    </div>
+                    <div className='iconDiv'>
+                        <IconButton onClick={handlescreenHacker}>
+                            <WhatshotIcon style={{ fontSize: 30, color: '#616161' }} />
+                        </IconButton>
+                        <h3>Hacker</h3>
+                    </div>
+                </div>
 
             </div>
-            <div className="buttonContSmallscreen">
-                <div className='iconDiv' >
-                <IconButton onClick={handlescreenCoder}>
-                    <CodeIcon style={{fontSize:30,color:'#616161'}}/>
-                </IconButton>
-                <h3>Coder</h3>
-                </div>
-                <div className='iconDiv'>
-                <IconButton onClick={handlescreenHacker}>
-                    <WhatshotIcon style={{fontSize:30,color:'#616161'}}/>
-                </IconButton>
-                <h3>Hacker</h3>
-                </div>
-            </div>
-               
-            </div>
-         
+
         </div>
     );
 }

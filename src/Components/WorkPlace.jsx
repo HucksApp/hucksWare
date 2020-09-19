@@ -18,7 +18,7 @@ import ForwardIcon from '@material-ui/icons/Forward';
 
 const WorkPlace = ({ work }) => {
     return (
-        <div key={work.sn} >
+        <div className="work" key={work.sn} >
             <Card style={{ maxWidth: 400, fontSize: '30px', height: 550 }} elevation={6}>
                 <CardHeader
                     style={{ color: '#616161' }}
@@ -26,7 +26,7 @@ const WorkPlace = ({ work }) => {
                 />
                 <CardMedia
                     image={work.thumb}
-                    style={{ height: 200, width: 400, margin: 0 }}
+                    style={{ height: 200, maxWidth: 400, margin: 0 }}
                 />
                 <CardHeader
                     style={{ color: '#616161', backgroundColor: '#ededed', marginTop: 10 }}
