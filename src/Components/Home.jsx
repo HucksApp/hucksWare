@@ -38,7 +38,7 @@ export default function Home() {
         <NavDrawer />
       </div>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/bio'>
           <div>{home}</div>
         </Route>
 
