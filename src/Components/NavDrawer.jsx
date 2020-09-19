@@ -20,7 +20,7 @@ export default function NavDrawer(props) {
 
     const BioLink = (props) => {
 
-        return < NavLink to={'/hucksWare/Projects'} {...props} />;
+        return < NavLink to={'/hucksWare'} {...props} />;
 
     }
 
