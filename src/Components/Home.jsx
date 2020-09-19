@@ -38,14 +38,14 @@ export default function Home() {
         <NavDrawer />
       </div>
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/bio'>
           <div>{home}</div>
         </Route>
 
         <Route exact path='/Projects'>
           <ComingSoon />
         </Route>
-        <Route exact path='/*'>
+        <Route >
           <Error />
         </Route>
       </Switch>
