@@ -27,7 +27,7 @@ export default function NavDrawer(props) {
 
     const ProjectLink = (props) => {
 
-        return < NavLink to={'/Projects'} {...props} />;
+        return < NavLink to={'/hucksWare/Projects'} {...props} />;
 
     }
 
