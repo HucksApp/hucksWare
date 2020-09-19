@@ -63,4 +63,8 @@ cursor: pointer;
       display: none;
   }
 
+  .navTopBotton{
+      height: 8vh;
+  }
+
 }
