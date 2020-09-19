@@ -42,7 +42,7 @@ export default function Home() {
           <div>{home}</div>
         </Route>
 
-        <Route exact path='hucksWare/Projects'>
+        <Route exact path='/hucksWare/Projects'>
           <ComingSoon />
         </Route>
         <Route >
