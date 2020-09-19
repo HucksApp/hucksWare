@@ -1,7 +1,7 @@
-import React,{useEffect,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Typography from '@material-ui/core/Typography';
-import {  withStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import '../Styles/slider.css'
 
 
@@ -9,8 +9,8 @@ import '../Styles/slider.css'
 const BorderLinearProgress = withStyles((theme) => ({
   root: {
     height: 30,
-    borderTopRightRadius:5,
-    borderBottomRightRadius:5
+    borderTopRightRadius: 5,
+    borderBottomRightRadius: 5
   },
   colorPrimary: {
     backgroundColor: theme.palette.grey[theme.palette.type === 'light' ? 200 : 700],
@@ -50,15 +50,15 @@ const SliderComp = (props) => {
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  });
 
 
   return (
-   
-    <div  className='slider'>
+
+    <div className='slider'>
       <p>{props.skill} </p>
-      <BorderLinearProgress  variant='determinate' value={progress} />
-      <Typography style={{fontSize:"30px",color:'#616161'}} variant='h3' >{`${Math.round(progress,)}%`}</Typography>
+      <BorderLinearProgress variant='determinate' value={progress} />
+      <Typography style={{ fontSize: "30px", color: '#616161' }} variant='h3' >{`${Math.round(progress,)}%`}</Typography>
     </div>
   );
 }

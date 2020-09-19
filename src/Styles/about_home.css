@@ -66,3 +66,23 @@ transition: all 0.6s;
     padding-right: 10px;
     padding-bottom: 60px;
 }
+
+
+
+@media screen and (max-width: 546px){
+
+    .aboutHome{
+
+        width: 100%;
+        display: none;
+        
+    }
+
+
+    .aboutHome{
+        padding: 10px;
+    }
+
+    
+
+}

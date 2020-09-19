@@ -14,7 +14,7 @@ import '../Styles/biography.css'
 
 const Biography = (props) => {
 
-    const handleClick = ()=>{
+    const handleClick = () => {
         props.screen('coder')
     }
 
@@ -23,15 +23,15 @@ const Biography = (props) => {
         <div className='biography'>
             <span >
                 <IconButton onClick={handleClick}>
-                <CodeIcon style={{fontSize:50,color:'#616161'}}/>
+                    <CodeIcon style={{ fontSize: 50, color: '#616161' }} />
                 </IconButton>
                 <h3>CODER</h3>
             </span>
-                <img  className="hucks" src={hucks}/>
-                
-        
-            </div>
-                
+            <img alt="hucks" className="hucks" src={hucks} />
+
+
+        </div>
+
     );
 }
 

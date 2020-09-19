@@ -36,8 +36,9 @@
 .navTopBotton{
    background-color: #d8d8d8;
     margin-right: 5px;
-    height: 85px;
-    width: 90px;
+    height: 13vh;
+    width: 20%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,4 +54,13 @@ cursor: pointer;
 .navTopBotton:hover>*{
     transform: scale(1.4,1.4);
     transition: all 1.3s;
+}
+
+
+@media screen and (max-width: 465px){
+
+  .logo_div{
+      display: none;
+  }
+
 }

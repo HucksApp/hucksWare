@@ -17,7 +17,7 @@ const BiographyHack = (props) => {
 
     return (
         <div className="hack">
-            <img  className="hack_hucks" src={hackHucks}/>
+            <img alt="hacker" className="hack_hucks" src={hackHucks}/>
             <span>
                 <IconButton onClick={handleClick}>
                     <WhatshotIcon style={{fontSize:50,color:'#616161'}}/>

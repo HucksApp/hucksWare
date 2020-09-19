@@ -2,6 +2,7 @@
     height: 100vh;
     display: flex;
     justify-content: flex-end;
+    
 
     
     
@@ -12,3 +13,7 @@
     width: 400px;  
     filter: brightness(0); 
 }
+
+
+
+

@@ -1,0 +1,45 @@
+.smallscreenCont{
+    display: none;
+}
+
+
+@media screen and (max-width: 546px){
+
+    .smallscreenCont{
+        display: initial;
+    }
+
+
+
+.hackSmallscreen{
+    height: 70vh;
+    width: 60%;
+    filter: grayscale(100%); 
+}
+
+.ssIconCover{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border: solid #f5f5f5;
+    margin-top: 20px;
+    padding: 2%;
+    transition: all 1s;
+
+    
+}
+
+.buttonContSmallscreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.iconDiv{
+    background-color: #f5f5f5;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+}

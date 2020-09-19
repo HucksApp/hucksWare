@@ -1,12 +1,15 @@
-import React,{ useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 
 import HomeDark from './HomeDark'
 import HomeMain from './HomeMain'
+import ComingSoon from './ComingSoon'
+import Error from './Error'
 
 
+import NavDrawer from './NavDrawer'
 
 
 
@@ -20,38 +23,35 @@ export default function Home() {
   let home;
 
 
-/*
-  const handleScroll = () => {
-    update_home(!home_dark)
-        
+
+  if (home_dark === true) {
+    home = <HomeDark update_home={update_home} d_state={home_dark} />;
+  } else if (home_dark === false) {
+
+    home = <HomeMain update_home={update_home} d_state={home_dark} />
   }
-  
 
-useEffect(()=>{
-
-     window.addEventListener("scroll",handleScroll)
-     return window.addEventListener("scroll", handleScroll)
-
-
-})
-
-
-
-*/
-  console.log(home_dark)
-  if(home_dark === true){
-        home = <HomeDark  update_home= {update_home} d_state ={home_dark} />;
-  }else if(home_dark === false){
-
-      home = <HomeMain update_home= {update_home} d_state ={home_dark} />
-  }
-  
 
   return (
-    <div >
-      {home}
-    </div>
-   
+    <BrowserRouter>
+      <div>
+        <NavDrawer />
+      </div>
+      <Switch>
+        <Route exact path='/'>
+          <div>{home}</div>
+        </Route>
+
+        <Route exact path='/Projects'>
+          <ComingSoon />
+        </Route>
+        <Route exact path='/*'>
+          <Error />
+        </Route>
+      </Switch>
+
+    </BrowserRouter>
+
   )
 }
 

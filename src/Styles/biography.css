@@ -9,3 +9,8 @@
     width: 400px; 
     filter: grayscale(100%); 
 }
+
+
+@media screen and (max-width: 465px){
+
+}

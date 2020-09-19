@@ -9,7 +9,7 @@ import DevicesIcon from '@material-ui/icons/Devices';
 import DynamicFeedIcon from '@material-ui/icons/DynamicFeed';
 
 
-
+import SmallScreeAbout from './SmallScreeAbout'
 import Contact from './Contact'
 import Experience  from './Experience'
 import AboutHome from './AboutHome'
@@ -118,6 +118,7 @@ const HomeMain = (props) => {
         </div>
         <div ref={aboutRef}>
         <AboutHome/>
+        <SmallScreeAbout/>
         </div>
         <div ref={skillsRef}> 
         <Skills/>
