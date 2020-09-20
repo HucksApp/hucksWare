@@ -10,21 +10,21 @@ import hackHucks from '../Images/hucks22.png'
 
 const BiographyHack = (props) => {
 
-    const handleClick = ()=>{
+    const handleClick = () => {
         props.screen('hacker')
     }
 
 
     return (
         <div className="hack">
-            <img alt="hacker" className="hack_hucks" src={hackHucks}/>
+            <img alt="hacker" className="hack_hucks" src={hackHucks} />
             <span>
                 <IconButton onClick={handleClick}>
-                    <WhatshotIcon style={{fontSize:50,color:'#616161'}}/>
+                    <WhatshotIcon style={{ fontSize: 50, color: '#616161' }} />
                 </IconButton>
-            <h3>HACKER</h3>
+                <h3>HACKER</h3>
             </span>
-            
+
         </div>
     );
 }

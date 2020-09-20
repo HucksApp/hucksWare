@@ -16,17 +16,17 @@ import '../Styles/contact.css'
 const Contact = (props) => {
 
 
-    const handleScrollTop = ()=>{
+    const handleScrollTop = () => {
 
-        
-        
-            props.scrollTop.current.scrollIntoView({
+
+
+        props.scrollTop.current.scrollIntoView({
             behavior: "smooth",
             block: "start",
             duration: "6000"
-          })
-    
-          
+        })
+
+
     }
 
 
@@ -36,33 +36,33 @@ const Contact = (props) => {
     return (
         <div className='contactHome'>
             <svg preserveAspectRatio='none' viewBox='0 0 100 102' height='75' width='100%'
-            
-                version ='1.1' xmlns='http://w3.org/2000/svg' className = 'svgcolor-light'
+
+                version='1.1' xmlns='http://w3.org/2000/svg' className='svgcolor-light'
             >
                 <path d='M0 0 L50 100 L100 0 Z' fill='#F5F5F5' stroke='#F5F5F5'></path>
 
             </svg>
             <div className='contactSubContain'>
                 <div className="underlineContain">
-                <h1>CONTACT</h1>
-                <p className="underlinetag"></p>
+                    <h1>CONTACT</h1>
+                    <p className="underlinetag"></p>
                 </div>
                 <div className="formContain">
-                    <ContactForm/>
+                    <ContactForm />
                 </div>
                 <div className='scroller' >
                     <div onClick={handleScrollTop}>
-                    <Tooltip title='Sroll Up' aria-label='Sroll Up'>
-                    <IconButton >
-                        <VerticalAlignTopIcon style={{fontSize: 80, color:'#fff'}}/>
-                    </IconButton>
-                    </Tooltip>
+                        <Tooltip title='Sroll Up' aria-label='Sroll Up'>
+                            <IconButton >
+                                <VerticalAlignTopIcon style={{ fontSize: 80, color: '#fff' }} />
+                            </IconButton>
+                        </Tooltip>
                     </div>
                 </div>
                 <div className='footer'>
-                    <Footer/>
+                    <Footer />
                 </div>
-                
+
 
             </div>
         </div>
