@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hucksWare/static/css/main.fa848f3a.chunk.css",
+    "main.css": "/hucksWare/static/css/main.d14004eb.chunk.css",
     "main.js": "/hucksWare/static/js/main.d6cb4297.chunk.js",
     "main.js.map": "/hucksWare/static/js/main.d6cb4297.chunk.js.map",
     "runtime-main.js": "/hucksWare/static/js/runtime-main.bc28fcb7.js",
@@ -9,10 +9,10 @@
     "static/js/2.80149495.chunk.js": "/hucksWare/static/js/2.80149495.chunk.js",
     "static/js/2.80149495.chunk.js.map": "/hucksWare/static/js/2.80149495.chunk.js.map",
     "index.html": "/hucksWare/index.html",
-    "precache-manifest.d1fa384af36ad6919f13af4af22408ed.js": "/hucksWare/precache-manifest.d1fa384af36ad6919f13af4af22408ed.js",
+    "precache-manifest.d4dbf926003837abddb6f570d22358e0.js": "/hucksWare/precache-manifest.d4dbf926003837abddb6f570d22358e0.js",
     "service-worker.js": "/hucksWare/service-worker.js",
     "static/css/2.00129a64.chunk.css.map": "/hucksWare/static/css/2.00129a64.chunk.css.map",
-    "static/css/main.fa848f3a.chunk.css.map": "/hucksWare/static/css/main.fa848f3a.chunk.css.map",
+    "static/css/main.d14004eb.chunk.css.map": "/hucksWare/static/css/main.d14004eb.chunk.css.map",
     "static/js/2.80149495.chunk.js.LICENSE.txt": "/hucksWare/static/js/2.80149495.chunk.js.LICENSE.txt",
     "static/media/home.css": "/hucksWare/static/media/code.ccd2926b.gif",
     "static/media/feshcom.svg": "/hucksWare/static/media/feshcom.50a024cb.svg",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.bc28fcb7.js",
     "static/css/2.00129a64.chunk.css",
     "static/js/2.80149495.chunk.js",
-    "static/css/main.fa848f3a.chunk.css",
+    "static/css/main.d14004eb.chunk.css",
     "static/js/main.d6cb4297.chunk.js"
   ]
 }
