@@ -120,7 +120,7 @@
 
 
 .about_underline{
-    padding: 80px;
+    padding:5px 80px;
    display: flex;
    flex-direction: column;
    align-items: center;
