@@ -51,6 +51,7 @@
 .navTopBotton:hover{
 background-color: #aa84e0;
 cursor: pointer;
+transition: all 1s;
 }
 
 .navTopBotton:hover>*{
