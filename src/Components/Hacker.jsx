@@ -25,8 +25,9 @@ const Hacker = () => {
           <Paper elevation={5}>
             <article style={{ color: '#616161' }}>
               A white Hat Hacker, with long years of experience in Kali-Linux and Kali tools,..Wire Shark, Nmap , Rapid7 frameworks, AirCrack-ng.Creation of Exploitaion Sofwares,Malware,Wireless Hacking, Social Engineering, Reverse Engineering....
-              Curiosity create persistency and exploiration. within Skills and Knowledge evolves.You need to be be good at been Bad To beat The Bad..
-        <div style={{ color: '#aa84e0' }}>Grew more eyes to watch my back </div>
+              The thirst for Knowledge of how it all fits and connect drives me everyday, Curiosity create persistency and exploiration. within Skills and Knowledge evolves.You need to be be badest of the Bad To beat The Bad at been bad ..
+               .Its a great power to know How, Why, Where, When.  
+        <div style={{ color: '#aa84e0' }}>Grow more eyes to watch your back </div>
             </article>
           </Paper>
         </div>
